@@ -22,74 +22,68 @@
 <body class="w3-light-grey">
   <!-- Sidebar/menu -->
   <nav style="width: 20vw;"
-    class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-    style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-    <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-    <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="activities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN</a>
-    <a href="templatepage.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  </nav>
-
+  class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+  style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
+      <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
+      <a href="allactivities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN</a>
+      <!-- <a href="activities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN2</a> -->
+</nav>
 
   <div class="w3-content" style="margin-left: 25vw;">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WELKOM</span></h5>
-
-    <!-- First Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container">
-      <div class="w3-content">
-        <div class="w3-twothird">
-          <h1>Lorem Ipsum</h1>
-          <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-          <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <div class="w3-third w3-center">
-          <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Second Grid -->
-    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-      <div class="w3-content">
-        <div class="w3-third w3-center">
-          <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-        </div>
-
-        <div class="w3-twothird">
-          <h1>Lorem Ipsum</h1>
-          <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-          <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-    </div>
-
     <div class="w3-container" style="margin: auto; max-width:55vw;">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WELKOM</span></h5>
+      <!-- <h1>Selux riolerings applicatie</h1>
+      <p>Een kennis van mij zocht iemand die mee kon helpen met het verder bouwen van een rioleringsapplicatie
+        (Selux) die gebouwd is met de MEAN-stack (MongoDb, Express, Angular, NodeJs). Omdat ik al met Angular
+        ervaring had en mij ook nog wou verdiepen in NodeJs heb ik de kans gegrepen en deze uitdaging aangegaan.</p>
+      <p>Selux is dus een rioleringsapplicatie dat rioleringsbedrijven kunnen gebruiken om projecten te
+        digitaliseren. Hierbij kunnen ze verschillende projecten aanmaken, foto’s toevoegen, de nodige materialen
+        ingeven per project, Excel en/of pdf-documenten laten genereren en nog meer. Er is hiervoor ook een mobiele
+        versie (Ionic) voorzien.</p>
+      <p>Mijn taken waren divers in dit project. Ik heb zowel front-end als back-end deze kunnen uitvoeren. Ik heb
+        verder gewerkt op de admin project van Selux en op de mobiele versie met Ionic. </p>
+      <p>Hierin heb ik verschillende features moeten implementeren. Zoals, voorzien om bepaalde soorten projecten
+        (DWA, RWA, slokkerprojecten) te kunnen aanmaken. Elk soort project heeft zijn eigen datastructuur waarbij
+        deze data ook opgeslaan, bewerkt of verwijderd kan worden. Ik moest hiervoor dus de nodige pagina met
+        Angular aanmaken en uiteindelijk opslaan in onze databank. </p>
+      <p>Een ander voorbeeld van mijn implementaties was een tabel met verschillende filter functies voorzien om
+        projecten te kunnen visualiseren en selecteren.</p>
+      <p>Ook moest er een settingspagina voorzien worden waarbij elke gebruiker bepaalde configuraties kon aanvinken
+        zoals variabelen aan en uit zetten.</p>
+      <p>Er is ook een mobiele versie (Ionic) voorzien die de werknemers kunnen gebruiken om zoals per project
+        gegevens aan te passen en foto’s toe te voegen. </p>
+      <p>Hierbij ben ik wel wat problemen tegengekomen. Omdat er bij het aanmaken/bewerken van een project
+        sequentieel formulieren moest ingevuld worden heeft dit wat voor problemen gezorgd. Het effectief uploaden
+        en weergeven van foto’s was ook een leuke uitdaging. Uiteindelijk door zelf te experimenteren en oplossingen
+        te zoeken was het ons gelukt om dit probleem aan te pakken.</p>
+      <p>Dit was in het algemeen een heel leuk uitdaging omdat ik redelijk weinig ervaring had met NodeJs en had
+        hiermee ook de kans om hierin te werken. </p>
+      <p>Voor het Angular deel was het ook heel interessant om mijn frontend skills te verbeteren. Na elk afronding
+        van een feature geeft dit ook een voldoening en motiveert dit jou om er iets leuk van te maken.</p>
+      <p>Doorheen het project ben ik uiteraard veel problemen tegengekomen en heb geprobeerd om van elk probleem
+        mijn les uit te trekken. Voor het backend deel heb ik mij in het begin ook extra moeten inzetten omdat ik
+        hier redelijk weinig in gewerkt had. </br>
+        Al bij al verliep deze proces wel heel goed. Ik heb reverse-engineering
+        kunnen doen om de bestaande code te bestuderen en dus de algemene werking van de backend te begrijpen en
+        hierna mijn eigen implementaties te kunnen inbrengen. Uiteindelijk verliep dit project zeer goed en was heel
+        tevreden met de resultaten die geboekt waren. Ik heb zowel mijn front-end skills als backend skills kunnen
+        verbeteren. Voor mijn studies heb ik dit ook zeker meegenomen.</p>
 
+      <p>Mijn uiteindelijke doel is als fullstack developer te kunnen werken en dit project was hierdoor een heel
+        goede start.</p> -->
 
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+    </br>
     </div>
-
-  </div>
-
   </div>
 
 
