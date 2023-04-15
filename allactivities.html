@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body,
         h1,
@@ -23,27 +25,36 @@
 
 <body class="w3-light-grey">
 
-    <!-- Sidebar/menu --------------------------------------------------->
-    <nav class="w3-sidebar w3-collapse w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center my-nav"
-    id="mySidebar"><br>
-    <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
-    <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
-    <a href="allactivities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN</a>
-    <!-- <a href="activities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN2</a> -->
+   <!-- Sidebar/menu --------------------------------------------------->
+   <nav class="w3-sidebar w3-collapse w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center my-nav"
+   id="mySidebar"><br>
+   <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
+   <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
+   <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
+   <a onclick="myAccFunc()" class="w3-bar-item w3-button" id="myBtn">
+       ACTIVITEITEN <i class="fa fa-caret-down"></i>
+   </a>
+   <div id="demoAcc" class="demoAccClass closed">
+       <div style="border-left: 1px solid gray; margin: 4rem; margin-top: 0rem;">
+           <a href="allactivities.html" class="w3-bar-item w3-button" onclick="w3_close()">Alle activiteiten</a>
+           <a href="activity1.html" class="w3-bar-item w3-button" onclick="w3_close()">Selux</a>
+           <a href="activity2.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 2</a>
+           <a href="activity3.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 3</a>
+       </div>
+   </div>
 </nav>
 
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="position: relative;">
-        <span class="w3-right w3-padding">OMER TULUMEN</span>
-        <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
-    </header>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="position: sticky;">
+   <span class="w3-right w3-padding">OMER TULUMEN</span>
+   <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+   title="close side menu" id="myOverlay"></div>
 
-    <!-- Sidebar/menu------------------------------------------ -->
+<!-- Sidebar/menu------------------------------------------ -->
 
     <div class="w3-content my-content">
         <div class="w3-container my-container">
@@ -52,7 +63,7 @@
 
             <!-- Header -->
             <header id="portfolio">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ACTIVITEITEN</span></h5>
+                <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">ACTIVITEITEN</span></h5>
 
                 <div class="w3-container">
 
@@ -66,8 +77,8 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>Projectweek</b></h2>
-                            <p><b>Domein:</b> Projectweek</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> Projectweek</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             Tijdens de projectweek zijn wij in een team gezet met gevarieerde persoonlijkheden. We
                             hebben
@@ -76,8 +87,8 @@
                             te stimuleren.</p>
                             <p></p>
 
-                            <p><b>Datum: </b> 14/02/2022 – 19/02/2022</p>
-                            <p><b>Duur:</b> 5 dagen </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 14/02/2022 – 19/02/2022</p>
+                            <p><b style="text-decoration: underline;">Duur:</b> 5 dagen </p>
                         </div>
                     </div>
                 </div>
@@ -85,14 +96,14 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>Brein aan het werk! Niet storen!</b></h2>
-                            <p><b>Domein:</b> POP-sessie</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> POP-sessie</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             In deze POP-sessie ging het in het algemeen over het effectief plannen en in kaart
                             brengen van wat onze prioriteiten zijn.</p>
                             <p></p>
-                            <p><b>Datum: </b> 22/02/2022
-                            <p><b>Duur:</b> 2 uur </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 22/02/2022
+                            <p><b style="text-decoration: underline;">Duur:</b> 2 uur </p>
                         </div>
                     </div>
                 </div>
@@ -101,14 +112,14 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>POPping</b></h2>
-                            <p><b>Domein:</b> POP-sessie</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> POP-sessie</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             In deze POP-sessie hebben we feedback kunnen geven en ontvangen aan anderen. Hierin was het
                             de bedoeling om de sterktes en zwaktes van jezelf en anderen beter te leren kennen.</p>
                             <p></p>
-                            <p><b>Datum: </b> 22/02/2022
-                            <p><b>Duur:</b> 2 uur </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 22/02/2022
+                            <p><b style="text-decoration: underline;">Duur:</b> 2 uur </p>
                         </div>
                     </div>
                 </div>
@@ -117,15 +128,15 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>DDD en IaC</b></h2>
-                            <p><b>Domein:</b> POP-sessie</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> POP-sessie</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             Hier hebben we in aanmerking gekomen met Domain Driven Design en Infrastructure As Code. We
                             hebben een klein project mogen aanmaken waarbij we deze concepten hebben mogen toepassen.
                             </p>
                             <p></p>
-                            <p><b>Datum: </b> 26/09/2022 – 21/10/2022
-                            <p><b>Duur:</b> 4 dagen </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 26/09/2022 – 21/10/2022
+                            <p><b style="text-decoration: underline;">Duur:</b> 4 dagen </p>
                         </div>
                     </div>
                 </div>
@@ -134,15 +145,15 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>Hack 4 Health</b></h2>
-                            <p><b>Domein:</b> Innovatie</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> Innovatie</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             Bij Hack 4 health waren er 3 challenges (healthcare problemen) waarvan we voor 1 van de
                             challenges een oplossing voor moeten uitvinden met een groep.
                             </p>
                             <p></p>
-                            <p><b>Datum: </b> 22/10/2022
-                            <p><b>Duur:</b> 48 uur </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 22/10/2022
+                            <p><b style="text-decoration: underline;">Duur:</b> 48 uur </p>
                         </div>
                     </div>
                 </div>
@@ -150,16 +161,16 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>Selux applicatie</b></h2>
-                            <p><b>Domein:</b> Persoonlijke Ontwikkeling</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> Persoonlijke Ontwikkeling</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             Een rioleringsapplicatie die gebruik maakt van MEAN-stack technologie. Hierbij was er zowel
                             een desktop als mobiele applicatie voorzien. Ik heb een kennis hierbij geholpen deze te
                             programmeren.
                             </p>
                             <p></p>
-                            <p><b>Datum: </b> November 2020 - Juli 2021
-                            <p><b>Duur:</b> 9 maanden </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> November 2020 - Juli 2021
+                            <p><b style="text-decoration: underline;">Duur:</b> 9 maanden </p>
                         </div>
                     </div>
                 </div>
@@ -167,15 +178,15 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>Cegeka: The Challenge of Open Source (all)</b></h2>
-                            <p><b>Domein:</b> Seminaries</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> Seminaries</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             In deze seminarie is er een deep dive gedaan op Open Source. Hoe het is ontstaan en hoe
                             Cegeka ermee omgaat.
                             </p>
                             <p></p>
-                            <p><b>Datum: </b> 15/03/2022
-                            <p><b>Duur:</b> 3 uur </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 15/03/2022
+                            <p><b style="text-decoration: underline;">Duur:</b> 3 uur </p>
                         </div>
                     </div>
                 </div>
@@ -183,15 +194,15 @@
                     <div class="container right">
                         <div class="content">
                             <h2 class="border-bottom"><b>Easi: API-first web development using Laravel and Vue</b></h2>
-                            <p><b>Domein:</b> Seminaries</p>
-                            <p><b>Omschrijving: </b></br>
+                            <p><b style="text-decoration: underline;">Domein:</b> Seminaries</p>
+                            <p><b style="text-decoration: underline;">Omschrijving: </b></br>
                             <p></p>
                             In deze seminarie hebben we een kleine api applicatie mogen programmeren gebruikmakend van
                             php (Laravel)
                             </p>
                             <p></p>
-                            <p><b>Datum: </b> 19/04/2022
-                            <p><b>Duur:</b> 3 uur </p>
+                            <p><b style="text-decoration: underline;">Datum: </b> 19/04/2022
+                            <p><b style="text-decoration: underline;">Duur:</b> 3 uur </p>
                         </div>
                     </div>
                 </div>
@@ -220,6 +231,24 @@
             document.getElementById("myOverlay").style.display = "none";
 
         }
+
+        
+        function myAccFunc() {
+            var div = document.getElementById("demoAcc");
+            if (div.classList.contains("closed")) {
+                div.classList.remove("closed");
+                div.classList.add("opened");
+                div.style.height= "auto";
+
+            } else {
+                div.classList.remove("opened");
+                div.classList.add("closed");
+                setTimeout(function () {
+                    div.style.height= "0px";
+            }, 500);
+
+            }
+        }
     </script>
 
 </body>
@@ -227,8 +256,19 @@
 </html>
 
 <style>
-    * {
-        box-sizing: border-box;
+   
+   #demoAcc {
+        transition: opacity 1s ease-out;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #demoAcc.closed {
+        opacity: 0;
+    }
+
+    #demoAcc.opened {
+        opacity: 1;
     }
 
     .border-bottom {
@@ -261,6 +301,7 @@
     /* Container around content */
     .container {
         padding: 10px 40px;
+        width: 120%;
         background-color: inherit;
 
     }
@@ -344,15 +385,19 @@
     /* Media queries - Responsive timeline on screens less than 600px wide */
     @media screen and (max-width: 1000px) {
 
+        * {
+        font-size: 0.99em;
+    }
+
         /* Place the timelime to the left */
         .timeline::after {
-            left: 31px;
+            left: 10px;
         }
 
         /* Full-width containers */
         .container {
             width: 100%;
-            padding-left: 70px;
+            padding-left: 50px;
             padding-right: 25px;
         }
 
@@ -367,7 +412,7 @@
         /* Make sure all circles are at the same spot */
         .left::after,
         .right::after {
-            left: 15px;
+            left: 1px;
         }
 
         /* Make all right containers behave like the left ones */
@@ -384,7 +429,7 @@
         }
 
         .my-container {
-            max-width: 90vw;
+            max-width: 100vw;
         }
     }
 </style>

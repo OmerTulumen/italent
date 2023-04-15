@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body,
         h1,
@@ -20,18 +22,30 @@
 </head>
 
 <body class="w3-light-grey">
+
+
+    
     <!-- Sidebar/menu --------------------------------------------------->
     <nav class="w3-sidebar w3-collapse w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center my-nav"
-        id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
+    id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
         <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
-        <a href="allactivities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN</a>
-        <!-- <a href="activities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN2</a> -->
+        <a onclick="myAccFunc()" class="w3-bar-item w3-button" id="myBtn">
+            ACTIVITEITEN <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAcc" class="demoAccClass closed">
+            <div style="border-left: 1px solid gray; margin: 4rem; margin-top: 0rem;">
+                <a href="allactivities.html" class="w3-bar-item w3-button" onclick="w3_close()">Alle activiteiten</a>
+                <a href="activity1.html" class="w3-bar-item w3-button" onclick="w3_close()">Selux</a>
+                <a href="activity2.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 2</a>
+                <a href="activity3.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 3</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="position: relative;">
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="position: sticky;">
         <span class="w3-right w3-padding">OMER TULUMEN</span>
         <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
@@ -46,7 +60,7 @@
 and is wrapped around the whole page content, except for the footer in this example -->
     <div class="w3-content my-content">
         <div class="w3-container my-container">
-            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WELKOM</span></h5>
+            <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">WELKOM</span></h5>
             <p> Ik beschouw dit portfolio als een soort dagboek van mijn studieleven. Hierin beschrijf ik
                 niet alleen wat ik heb geleerd tijdens mijn studie, maar ook de uitdagingen die ik ben tegengekomen.
                 Dit geeft de lezer een idee van mijn persoonlijke groei en ontwikkeling gedurende mijn
@@ -101,6 +115,24 @@ and is wrapped around the whole page content, except for the footer in this exam
             document.getElementById("myOverlay").style.display = "none";
 
         }
+
+        
+        function myAccFunc() {
+            var div = document.getElementById("demoAcc");
+            if (div.classList.contains("closed")) {
+                div.classList.remove("closed");
+                div.classList.add("opened");
+                div.style.height= "auto";
+
+            } else {
+                div.classList.remove("opened");
+                div.classList.add("closed");
+                setTimeout(function () {
+                    div.style.height= "0px";
+            }, 500);
+
+            }
+        }
     </script>
 
 </body>
@@ -116,6 +148,20 @@ and is wrapped around the whole page content, except for the footer in this exam
     #mySidebar.closed {
         width: 0;
 
+    }
+
+    #demoAcc {
+        transition: opacity 1s ease-out;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #demoAcc.closed {
+        opacity: 0;
+    }
+
+    #demoAcc.opened {
+        opacity: 1;
     }
 
     .my-content {
