@@ -20,24 +20,32 @@
 </head>
 
 <body class="w3-light-grey">
-    <!-- Sidebar/menu -->
-    <nav style="width: 20vw;"
-        class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <!-- Sidebar/menu --------------------------------------------------->
+    <nav class="w3-sidebar w3-collapse w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center my-nav"
+        id="mySidebar"><br>
         <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
-        <a href="javascript:void(0)" onclick="w3_close()"
-            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
         <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
         <a href="allactivities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN</a>
         <!-- <a href="activities.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITEITEN2</a> -->
     </nav>
 
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="position: relative;">
+        <span class="w3-right w3-padding">OMER TULUMEN</span>
+        <a href="javascript:void(0)" class="w3-left w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- Sidebar/menu------------------------------------------ -->
 
     <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
-    <div class="w3-content" style="margin-left: 25vw;">
-        <div class="w3-container" style="margin: auto; max-width:55vw;">
+    <div class="w3-content my-content">
+        <div class="w3-container my-container">
             <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WELKOM</span></h5>
             <p> Ik beschouw dit portfolio als een soort dagboek van mijn studieleven. Hierin beschrijf ik
                 niet alleen wat ik heb geleerd tijdens mijn studie, maar ook de uitdagingen die ik ben tegengekomen.
@@ -62,7 +70,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
         </div>
-<!-- 
+        <!-- 
         <div class="w3-card-4 w3-margin w3-white">
             <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
             <div class="w3-container">
@@ -74,6 +82,68 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     </div>
 
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            var sidebar = document.getElementById("mySidebar");
+            sidebar.classList.remove("closed");
+            sidebar.style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            var sidebar = document.getElementById("mySidebar");
+            sidebar.classList.add("closed");
+
+            setTimeout(function () {
+                sidebar.style.display = "none";
+            }, 500);
+            document.getElementById("myOverlay").style.display = "none";
+
+        }
+    </script>
+
 </body>
 
 </html>
+
+
+<style>
+    #mySidebar {
+        transition: width 0.5s ease-out;
+    }
+
+    #mySidebar.closed {
+        width: 0;
+
+    }
+
+    .my-content {
+        margin-left: 25vw;
+    }
+
+    .my-nav {
+        max-width: 25vw;
+        z-index: 3;
+        font-weight:bold;
+    }
+
+    .my-container {
+        margin: auto;
+        max-width: 55vw;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .my-content {
+            margin-left: 0vw;
+        }
+
+        .my-nav {
+            max-width: 50vw;
+        }
+
+        .my-container {
+            max-width: 90vw;
+        }
+    }
+</style>
