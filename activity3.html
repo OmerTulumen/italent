@@ -24,22 +24,24 @@
 <body class="w3-light-grey">
     <!-- Sidebar/menu --------------------------------------------------->
     <nav class="w3-sidebar w3-collapse w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center my-nav"
-        id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
-        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
-        <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
-        <a onclick="myAccFunc()" class="w3-bar-item w3-button" id="myBtn">
-            ACTIVITEITEN <i class="fa fa-caret-down"></i>
-        </a>
-        <div id="demoAcc" class="demoAccClass closed">
-            <div style="border-left: 1px solid gray; margin: 4rem; margin-top: 0rem;">
-                <a href="allactivities.html" class="w3-bar-item w3-button" onclick="w3_close()">Alle activiteiten</a>
-                <a href="activity1.html" class="w3-bar-item w3-button" onclick="w3_close()">Selux</a>
-                <a href="activity2.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 2</a>
-                <a href="activity3.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 3</a>
-            </div>
+    id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
+    <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
+    <a href="reflectie.html" onclick="w3_close()" class="w3-bar-item w3-button">REFLECTIE</a>
+    <a onclick="myAccFunc()" class="w3-bar-item w3-button" id="myBtn">
+        ACTIVITEITEN <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="demoAccClass closed">
+        <div style="border-left: 1px solid gray; margin: 4rem; margin-top: 0rem;">
+            <a href="allactivities.html" class="w3-bar-item w3-button" onclick="w3_close()">Alle activiteiten</a>
+            <a href="activity1.html" class="w3-bar-item w3-button" onclick="w3_close()">Hack4Health</a>
+            <a href="activity2.html" class="w3-bar-item w3-button" onclick="w3_close()">Selux</a>
+            <a href="activity3.html" class="w3-bar-item w3-button" onclick="w3_close()">Cegeka: Open source</a>
         </div>
-    </nav>
+    </div>
+
+</nav>
 
 
     <!-- Top menu on small screens -->
@@ -60,99 +62,119 @@
                 <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">ACTIVITEIT VERSLAG</span></h5>
 
                 <div class="w3-container my-container">
+
                     <div class="w3-card-4 w3-margin w3-white">
-                        <img src="hack4health.png" alt="Nature" style="width:100%; height: 100%;">
+                        <img src="cegeka.png" alt="Nature" style="width:100%; height: 100%;">
                         <div class="w3-container">
-                            <h3><b>Hack4Health</b></h3>
-                            <h5>MEAN-stack <span class="w3-opacity"></h5>
+                            <h3><b>The challenges of open source</b></h3>
+                            <h5>Cegeka<span class="w3-opacity"></h5>
                         </div>
                         <div style="border-bottom: 1px solid gray; margin: auto; width: 85%;">
 
                         </div>
 
                         <div class="w3-container" style="padding: 5em; padding-top: 2em;">
-                            <p>Een kennis van mij zocht iemand die mee kon helpen met het verder bouwen van een
-                                rioleringsapplicatie
-                                (Selux) die gebouwd is met de MEAN-stack (MongoDb, Express, Angular, NodeJs). Omdat ik
-                                al met
-                                Angular
-                                ervaring had en mij hier nog verder in wou verdiepen heb ik de kans gegrepen en deze
-                                uitdaging
-                                aangegaan.</p>
-                            <p>Selux is dus een rioleringsapplicatie dat rioleringsbedrijven kunnen gebruiken om
-                                projecten te
-                                digitaliseren. Hierbij kunnen ze verschillende projecten aanmaken, foto’s toevoegen, de
-                                nodige
-                                materialen
-                                ingeven per project, Excel en/of pdf-documenten laten genereren en nog meer.</p>
-                            <p>Mijn taken waren divers in dit project. Ik heb zowel front-end als back-end deze kunnen
-                                uitvoeren. Ik heb
-                                verder gewerkt op de admin project van Selux en op de mobiele versie met Ionic.
-                                </br>
-                                Hierin heb ik verschillende features moeten implementeren. Zoals, voorzien om bepaalde
-                                soorten
-                                projecten
-                                (DWA, RWA, slokkerprojecten) te kunnen aanmaken. Elk soort project heeft zijn eigen
-                                datastructuur waarbij
-                                deze data ook opgeslaan, bewerkt of verwijderd kan worden. Ik moest hiervoor dus de
-                                nodige
-                                pagina met
-                                Angular aanmaken en uiteindelijk opslaan in onze databank.
-                            </p>
-                            <p>Een ander voorbeeld van mijn implementaties was een tabel met verschillende filter
-                                functies
-                                voorzien om
-                                projecten te kunnen visualiseren en selecteren.</p>
-                            <p>Ook moest er een settingspagina voorzien worden waarbij elke gebruiker bepaalde
-                                configuraties kon
-                                aanvinken
-                                zoals variabelen aan en uit zetten.</p>
-                            <p> Een mobiele versie (Ionic) was ook voorzien, waarbij werknemers bijvoorbeeld gegevens
-                                per
-                                project konden aanpassen en foto's toevoegen. </p>
-                            <p>Hierbij ben ik wel wat problemen tegengekomen. Omdat er bij het aanmaken/bewerken van een
-                                project
-                                sequentieel formulieren moest ingevuld worden heeft dit wat voor problemen gezorgd. Het
-                                effectief uploaden
-                                en weergeven van foto’s was ook een leuke uitdaging. Uiteindelijk door zelf te
-                                experimenteren en
-                                oplossingen
-                                te zoeken was het ons gelukt om dit probleem aan te pakken.</p>
-                            <p>Dit was in het algemeen een heel leuk uitdaging omdat ik redelijk weinig ervaring had met
-                                NodeJs
-                                en had
-                                hiermee ook de kans om hierin te werken. </p>
-                            <p>Voor het Angular deel was het ook heel interessant om mijn frontend skills te verbeteren.
-                                Na elk
-                                afronding
-                                van een feature geeft dit ook een voldoening en motiveert dit jou om er iets leuk van te
-                                maken.
-                            </p>
-                            <p>Doorheen het project ben ik uiteraard veel problemen tegengekomen en heb geprobeerd om
-                                van elk
-                                probleem
-                                mijn les uit te trekken. Voor het backend deel heb ik mij in het begin ook extra moeten
-                                inzetten
-                                omdat ik
-                                hier redelijk weinig ervaring in had.
-                            </p>
-                            <p>
-                                Al bij al verliep deze proces wel heel goed. Ik heb reverse-engineering
-                                kunnen doen om de bestaande code te bestuderen en dus de algemene werking van de backend
-                                te
-                                begrijpen en
-                                hierna mijn eigen implementaties te kunnen inbrengen. Uiteindelijk verliep dit project
-                                zeer goed
-                                en was heel
-                                tevreden met de resultaten die geboekt waren. Ik heb zowel mijn front-end skills als
-                                backend
-                                skills kunnen
-                                verbeteren. Voor mijn studies heb ik dit ook zeker meegenomen.</p>
+                            <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin: 1rem; ">
+                                <div class="w3-row w3-center w3-card w3-padding" style="width: 45%; margin: 1em;">
+                                    <a onclick="openMenu(event, 'verslag');" id="myLink" style="cursor: pointer;">
+                                        <div class="tablink" style="text-decoration: none;"><b>Verslag</b></div>
+                                    </a>
+                                </div>
+                                <div class="w3-row w3-center w3-card w3-padding" style="width: 45%; margin: 1em;">
+                                    <a onclick="openMenu(event, 'reflectie');">
+                                        <div class="tablink" style="text-decoration: none; cursor: pointer">
+                                            <b>Reflectie</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="verslag" class="w3-container menu ">
 
-                            <p>Mijn uiteindelijke doel is als fullstack developer te kunnen werken en dit project was
-                                hierdoor
-                                een heel
-                                goede start.</p>
+                                <p>Sinds de jaren 60 is open source software een belangrijk onderdeel van de
+                                    technologische wereld. Het biedt gebruikers talloze voordelen, zoals het bestuderen,
+                                    verbeteren, distribueren en verkopen van de software code. Tijdens het seminarie
+                                    werd benadrukt dat open source software echter ook risico's met zich meebrengt.</p>
+                                <p>Een belangrijk onderdeel van deze risico's zijn de mogelijke
+                                    beveiligingskwetsbaarheden in open source software. Om deze risico's te begrijpen,
+                                    werd er ingegaan op de intellectual property law en de mogelijke gevaren van het
+                                    gebruik van verouderde open source software. Een concreet voorbeeld hiervan is de
+                                    recente log4j exploit, waarbij kwaadwillende actoren gebruik maakten van een
+                                    kwetsbaarheid in de open source library om ongeautoriseerde toegang te verkrijgen
+                                    tot systemen.</p>
+                                <p>Om dergelijke kwetsbaarheden te kunnen identificeren en beoordelen, werd tijdens het
+                                    seminarie de CVE (Common Vulnerabilities and Exposures) en de CVSS (Common
+                                    Vulnerability Scoring System) besproken. De CVE is een openbare lijst van bekende
+                                    beveiligingskwetsbaarheden, terwijl de CVSS een methode biedt om de ernst van deze
+                                    kwetsbaarheden te meten op basis van verschillende criteria, zoals de impact op de
+                                    vertrouwelijkheid, integriteit en beschikbaarheid van systemen.</p>
+                                <p>Om de risico's van open source software te verminderen, is het belangrijk voor
+                                    organisaties om deze tools te gebruiken en regelmatig updates en beveiligingspatches
+                                    te installeren. Daarnaast is het van cruciaal belang om de licenties en rechten van
+                                    de gebruikte software zorgvuldig te beoordelen en te controleren op eventuele
+                                    bekende kwetsbaarheden en beveiligingsfouten.</p>
+                                <p>In deze seminarie benadrukte Cegeka niet alleen de risico's en voordelen van open
+                                    source software, maar ook hoe organisaties zoals Cegeka zelf omgaan met deze
+                                    uitdagingen. Cegeka heeft een uitgebreid proces voor het beheer van open source
+                                    software en maakt daarbij gebruik van verschillende tools en technologieën om de
+                                    veiligheid en betrouwbaarheid te beschermen.</p>
+                                <p>Een voorbeeld hiervan is het gebruik van OWASP Dependency Check default output, een
+                                    tool die wordt gebruikt om mogelijke beveiligingskwetsbaarheden in open source
+                                    software te identificeren. Daarnaast maakt Cegeka gebruik van OWASP
+                                    interpreter-Power BI en OWASP Interpreter today om gegevens en rapporten over open
+                                    source software te analyseren en te visualiseren, waardoor het gemakkelijker wordt
+                                    om de impact van beveiligingsrisico's te begrijpen en te beheren.</p>
+                                <p>Door dergelijke tools en technologieën te gebruiken en een uitgebreid beheerproces te
+                                    implementeren, kan Cegeka de risico's van open source software minimaliseren en er
+                                    tegelijkertijd optimaal gebruik van maken. Dit is een belangrijke les voor andere
+                                    organisaties die open source software gebruiken en zich bewust zijn van de
+                                    complexiteit en uitdagingen van het beheer ervan.</p>
+                                <p>Tijdens het seminarie gaf Cegeka ook concrete tips voor organisaties die open source
+                                    software willen gebruiken. Zo adviseerde Cegeka om eerst een inventaris te maken van
+                                    de open source componenten die worden gebruikt in een applicatie. Vervolgens is het
+                                    belangrijk om deze componenten te controleren aan de hand van een witte lijst met
+                                    licenties die is opgesteld door de organisatie. Daarnaast is het aanbevolen om een
+                                    lijst toe te voegen aan de code met de gebruikte open source componenten en hun
+                                    licenties.</p>
+                                <p>Ten slotte is het belangrijk om regelmatig de beveiligingsrisico's van de gebruikte
+                                    open source componenten te controleren. Dit kan worden gedaan met behulp van tools
+                                    zoals OWASP Dependency Check, die mogelijke kwetsbaarheden identificeert. Door deze
+                                    stappen te volgen, kan een organisatie beter omgaan met het gebruik van open source
+                                    software en zo de eventuele risico's minimaliseren.</p>
+                                <p>Kortom, het beheer van open source software kan uitdagend zijn, maar door het volgen
+                                    van de juiste stappen en het gebruik van de juiste tools en technologieën kan een
+                                    organisatie de voordelen van open source software benutten en tegelijkertijd de
+                                    risico's minimaliseren. Cegeka biedt een goed voorbeeld van hoe organisaties dit
+                                    kunnen doen, door het implementeren van een uitgebreid beheerproces en het gebruik
+                                    van geavanceerde tools en technologieën.</p>
+
+                            </div>
+                            <div id="reflectie" class="w3-container menu">
+                                <p>Tijdens het seminarie over open source software heb ik veel geleerd over de voordelen
+                                    en risico's van het gebruik van deze software. Eén van de belangrijkste risico's
+                                    zijn de beveiligingskwetsbaarheden die kunnen voorkomen in de code. Het is daarom
+                                    van cruciaal belang dat organisaties die open source software gebruiken, regelmatig
+                                    updates en beveiligingspatches installeren en de licenties en rechten van de
+                                    gebruikte software zorgvuldig controleren op eventuele bekende kwetsbaarheden en
+                                    beveiligingsfouten.</p>
+                                <p>Het seminarie heeft mij ook geleerd over de CVE en de CVSS, waarmee organisaties de
+                                    beveiligingsrisico's van open source software kunnen identificeren en beoordelen op
+                                    basis van verschillende criteria. Door het gebruik van geavanceerde tools en
+                                    technologieën, zoals OWASP Dependency Check, kan een organisatie ook mogelijke
+                                    kwetsbaarheden in de code identificeren en de impact van beveiligingsrisico's beter
+                                    beheren.</p>
+                                <p>Ik vond het erg interessant om te horen hoe Cegeka omgaat met de uitdagingen van open
+                                    source software en hoe zij een uitgebreid beheerproces hebben geïmplementeerd om de
+                                    veiligheid en betrouwbaarheid te beschermen. Het advies dat Cegeka gaf tijdens het
+                                    seminarie, zoals het maken van een inventaris van de open source componenten en het
+                                    controleren van deze componenten aan de hand van een witte lijst met licenties, zijn
+                                    concrete stappen die organisaties kunnen nemen om de eventuele risico's van open
+                                    source software te minimaliseren.</p>
+                                <p>Het seminarie heeft mij dan ook geleerd dat het beheer van open source software
+                                    uitdagend kan zijn en er dus ook meer bij komt kijken dan dat men zou denken. Maar
+                                    organisaties kunnen door het volgen van de juiste stappen en het gebruik van de
+                                    juiste tools en technologieën de voordelen van open source software kunnen benutten
+                                    en tegelijkertijd de risico's kunnen minimaliseren.</p>
+                            </div>
 
                             <div style="border-top: 1px solid gray; width: 85%; margin: auto; margin-top: 4rem;">
 
@@ -169,19 +191,13 @@
                             <!-- First Photo Grid-->
                             <div class="w3-row-padding">
                                 <div class="w3-half w3-container w3-margin-bottom">
-                                    <img src="groupfoto2.jpg" alt="mean" style="width:100%;" class="w3-hover-opacity">
+                                    <img src="cegeka-owasp.PNG" alt="mean" style="width:100%;" class="w3-hover-opacity">
                                     <div class="w3-container w3-white">
-                                        <p><b>Groepsfoto tijdens hackathon</b></p>
-                                    </div>
-                                </div>
-                                <div class="w3-half w3-container w3-margin-bottom">
-                                    <img src="groupfoto.jpg" alt="mean" style="width:100%" class="w3-hover-opacity">
-                                    <div class="w3-container w3-white">
-                                        <p><b>Groepsfoto op het einde</b></p>
+                                        <p><b>OWASP interpreter today</b></p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                         <div class="w3-container my-container">
@@ -191,9 +207,6 @@
                     </div>
                 </div>
 
-                </br>
-                </br>
-                </br>
                 <div class="w3-row" style="margin: 1rem; display: flex; flex-direction: row; margin-top: 4rem;">
                     <div class="w3-col m12">
                         <a href="activity2.html" class="w3-button w3-padding-large w3-white w3-border"><b>
@@ -204,11 +217,6 @@
                 <div style="margin: auto; display: flex; justify-content: center;">
                     <p>3/3</p>
                 </div>
-                </br>
-                </br>
-                </br>
-                </br>
-
             </div>
 
         </div>
@@ -251,6 +259,20 @@
 
                 }
             }
+            function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
         </script>
 </body>
 

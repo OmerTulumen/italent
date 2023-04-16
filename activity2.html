@@ -24,23 +24,24 @@
 <body class="w3-light-grey">
     <!-- Sidebar/menu --------------------------------------------------->
     <nav class="w3-sidebar w3-collapse w3-bar-block w3-white w3-animate-left w3-text-grey w3-top w3-center my-nav"
-        id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
-        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
-        <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
-        <a onclick="myAccFunc()" class="w3-bar-item w3-button" id="myBtn">
-            ACTIVITEITEN <i class="fa fa-caret-down"></i>
-        </a>
-        <div id="demoAcc" class="demoAccClass closed">
-            <div style="border-left: 1px solid gray; margin: 4rem; margin-top: 0rem;">
-                <a href="allactivities.html" class="w3-bar-item w3-button" onclick="w3_close()">Alle activiteiten</a>
-                <a href="activity1.html" class="w3-bar-item w3-button" onclick="w3_close()">Selux</a>
-                <a href="activity2.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 2</a>
-                <a href="activity3.html" class="w3-bar-item w3-button" onclick="w3_close()">activity 3</a>
-            </div>
+    id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>OMER<br>TULUMEN</b></h3>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">WELKOM</a>
+    <a href="intro.html" onclick="w3_close()" class="w3-bar-item w3-button">VOORSTELLING</a>
+    <a href="reflectie.html" onclick="w3_close()" class="w3-bar-item w3-button">REFLECTIE</a>
+    <a onclick="myAccFunc()" class="w3-bar-item w3-button" id="myBtn">
+        ACTIVITEITEN <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="demoAccClass closed">
+        <div style="border-left: 1px solid gray; margin: 4rem; margin-top: 0rem;">
+            <a href="allactivities.html" class="w3-bar-item w3-button" onclick="w3_close()">Alle activiteiten</a>
+            <a href="activity1.html" class="w3-bar-item w3-button" onclick="w3_close()">Hack4Health</a>
+            <a href="activity2.html" class="w3-bar-item w3-button" onclick="w3_close()">Selux</a>
+            <a href="activity3.html" class="w3-bar-item w3-button" onclick="w3_close()">Cegeka: Open source</a>
         </div>
-    </nav>
+    </div>
 
+</nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="position: sticky;">
@@ -61,178 +62,286 @@
 
                 <div class="w3-container my-container">
                     <div class="w3-card-4 w3-margin w3-white">
-                        <img src="hack4health.png" alt="Nature" style="width:100%; height: 100%;">
-                        <div class="w3-container" style="margin: 1rem;">
-                            <h3><b>Hack4Health</b></h3>
-                            <h5>Cural <span class="w3-opacity"></h5>
-                        </div>
-                        <div style="border-bottom: 1px solid gray; margin: auto; width: 85%;">
-
+                        <img src="mean.png" alt="Nature" style="width:100%; height: 100%;">
+                        <div class="w3-container">
+                            <h3><b>Selux riolerings applicatie</b></h3>
+                            <h5>MEAN-stack <span class="w3-opacity"></h5>
                         </div>
 
-                        <div class="w3-container my-container" >
-                            <p>Hack4health is een Hackathon georganiseerd door POM Limburg en Bluehealth Inovation
-                                Center. Ik heb deelgenomen aan deze hackathon omdat ik graag een innovatief bijdrage
-                                wilde leveren in de medische sector.</p>
+                        <div style="border-top: 1px solid gray; width: 85%; margin: auto; margin-top: 4rem;">
 
-                            <p>De hackathon omvatte 3 challenges waarvoor oplossingen werden gezocht. Nadat de teams
-                                waren samengesteld, kregen we de keuze om te kiezen welke challenge we wilden aanpakken.
-                            </p>
+                        </div>
 
-                            <p>De 3 challenges waren als volgt. Bij de challenge "Hack the hospital" moest er een
-                                data-integratieplatform worden geprogrammeerd voor ziekenhuizen en patiënten
-                                (medEmotion), maar hierbij kwamen enkele problemen kijken, zoals privacy- en
-                                beveiligingsproblemen en de manier waarop de data-integratie zou plaatsvinden.</p>
+                        <div class="w3-container" style="padding: 5em; padding-top: 2em;">
 
-                            <p>Bij de challenge "Hack the diagnosis" was het probleem dat veel mensen met chronische
-                                huidziekten laat worden gediagnosticeerd, doordat ze pas laat naar een dermatoloog gaan.
-                                Er werd gezocht naar een oplossing om mensen eerder naar een dermatoloog te laten gaan
-                                voor een diagnose.</p>
-
-                            <p>Ten slotte was er de challenge "Hack the homecare". Uit cijfers blijkt dat het aantal
-                                mensen dat oudere familieleden zelf verzorgt daalt. Veel oudere patiënten hebben moeite
-                                om oogdruppels zelf toe te dienen. Er werd gezocht naar een oplossing om dit probleem
-                                aan te pakken.</p>
-                            <p>Ons team heeft gekozen voor de "Hack the hospital" challenge en we hebben een applicatie
-                                oplossing bedacht genaamd Cural. In onze onderzoek hebben we vastgesteld dat een
-                                zorgverlener gemiddeld 30 minuten nodig heeft om een patiënt thuis te behandelen,
-                                waarbij een deel van deze tijd wordt besteed aan het invullen van formulieren. Wij
-                                wilden dit proces efficiënter maken, zodat zorgverleners meer tijd hebben om de patiënt
-                                te behandelen en minder tijd besteden aan administratieve taken.</p>
-                            <p>Cural zal een voice recognition applicatie zijn die als extensie zal dienen op het
-                                bestaande medEmotion platform. Tijdens de behandeling van de patiënt luistert Cural naar
-                                de vragen van de zorgverlener en de antwoorden van de patiënt en vult automatisch de
-                                relevante formulieren in. Aan het einde van de behandeling controleert de zorgverlener
-                                of alles correct is ingevuld en past indien nodig de formulieren aan. Met dit concept
-                                kunnen we het proces van het invullen van formulieren aanzienlijk versnellen, waardoor
-                                zorgverleners meer tijd kunnen besteden aan de patiënt en de patiëntgegevens sneller
-                                toegankelijk zijn voor de betrokken artsen.</p>
-
-                            <p>Met ons concept hebben we op een innovatieve manier de "Hack the homecare" challenge
-                                aangepakt om het administratief werk in de zorg te verminderen en dus het werk van
-                                zorgverleners te verlichten. Hierdoor zal de benodigde data ook veel sneller
-                                toegankelijk zijn voor betrokken artsen van patiënten. Onze applicatie kan bijdragen aan
-                                een efficiëntere gezondheidszorg en de patiëntenzorg verbeteren door zorgverleners meer
-                                tijd te geven voor de behandeling van patiënten en minder tijd te besteden aan
-                                administratieve taken.</p>
-                            <p>Tijdens dit project hebben we geleerd hoe belangrijk het is om te kijken naar de
-                                uitdagingen en problemen in de gezondheidszorg en hoe technologie kan worden gebruikt om
-                                deze problemen op te lossen. We hebben geleerd hoe we onze ideeën op een creatieve
-                                manier kunnen presenteren en hoe we als team kunnen samenwerken om een gemeenschappelijk
-                                doel te bereiken. Door deel te nemen aan de Hack4Health-hackathon hebben we niet alleen
-                                een innovatief concept bedacht, maar hebben we ook waardevolle ervaring opgedaan in de
-                                gezondheidszorg en technologie.</p>
-
-                            <div style="border-top: 1px solid gray; width: 85%; margin: auto; margin-top: 4rem;">
+                            <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin: 1rem; ">
+                                <div class="w3-row w3-center w3-card w3-padding" style="width: 45%; margin: 1em;">
+                                    <a onclick="openMenu(event, 'verslag');" id="myLink" style="cursor: pointer;">
+                                        <div class="tablink" style="text-decoration: none;"><b>Verslag</b></div>
+                                    </a>
+                                </div>
+                                <div class="w3-row w3-center w3-card w3-padding"  style="width: 45%; margin: 1em;">
+                                    <a  onclick="openMenu(event, 'reflectie');">
+                                        <div class="tablink" style="text-decoration: none; cursor: pointer" ><b>Reflectie</b></div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div id="verslag" class="w3-container menu ">
+                                <p>Selux is een digitale rioleringsapplicatie die door rioleringsbedrijven kan worden
+                                    gebruikt om projecten te digitaliseren. Met Selux kunnen bedrijven verschillende
+                                    projecten aanmaken en foto's toevoegen, materialen per project invoeren, en Excel-
+                                    en/of
+                                    pdf-documenten genereren. Selux biedt dus verschillende functionaliteiten om het
+                                    digitaliseren van projecten te ondersteunen. Selux maakt hierbij gebruik van de
+                                    MEAN-stack (MongoDb, Express, Angular, NodeJs).</p>
+                                <p>Het werken aan Selux was een uitdagende en lonende ervaring die me veel kennis en
+                                    vaardigheden heeft bijgebracht. Het was een kans om mijn vaardigheden op het gebied
+                                    van
+                                    Angular te verbeteren en tegelijkertijd te leren over NodeJs. Het feit dat ik op
+                                    zowel
+                                    de front-end als de back-end moest werken, maakte de ervaring des te waardevoller
+                                    omdat
+                                    dit mij toeliet om een volledig architectuur van een webapplicatie te kunnen
+                                    bestuderen.
+                                </p>
+                                <p>Een van de uitdagende aspecten van dit project was het werken aan verschillende
+                                    soorten
+                                    projecten met elk hun eigen specifieke datastructuur. Het was belangrijk om ervoor
+                                    te
+                                    zorgen dat de applicatie deze data correct kon opslaan, bewerken en verwijderen.
+                                    Door
+                                    deze uitdagingen aan te gaan, heb ik mijn probleemoplossende vaardigheden verbeterd.
+                                </p>
+                                <p>Een andere belangrijke taak was het ontwikkelen van een tabel met alle projecten en
+                                    verschillende filterfuncties. Dit was een belangrijke functie omdat het de
+                                    gebruikers in
+                                    staat stelde om projecten op een visueel aantrekkelijke manier te selecteren en te
+                                    filteren. Dit was vooral handig voor admins die snel verschillende projecten wilden
+                                    vergelijken en analyseren.</p>
+                                <p>Het ontwikkelen van de instellingenpagina was een andere uitdagende taak omdat elke
+                                    gebruiker zijn eigen configuraties moest kunnen instellen. Het in- en uitschakelen
+                                    van
+                                    bepaalde variabelen was bijvoorbeeld belangrijk om de applicatie aan te passen aan
+                                    de
+                                    behoeften van verschillende gebruikers. Dit vereiste een grondig begrip van de
+                                    gebruikerservaring en de mogelijkheden van de MEAN-stack.</p>
+                                <p>Een ander interessant aspect van dit project was de mobiele versie van de applicatie,
+                                    die
+                                    werd ontwikkeld met Ionic. Het was uitdagend om de gegevens zo te structureren dat
+                                    ze
+                                    gemakkelijk via mobiele apparaten konden worden beheerd. Werknemers konden de
+                                    mobiele
+                                    app gebruiken om gegevens bij te werken en foto's toe te voegen aan projecten,
+                                    terwijl
+                                    de admins deze gegevens konden controleren en bijwerken via de admin-pagina indien
+                                    nodig.</p>
+                                <p>Hierdoor is zowel de werkgever als de werknemer altijd op de hoogte met de status van
+                                    het
+                                    project werden zo misverstanden ontweken.</p>
+                                <p>Met de selux applicatie was er ook de mogelijkheid om pdf's en excel-documenten te
+                                    laten
+                                    genereren op basis van de ingevoerde gegevens. Dit was een enorme tijdsbesparing
+                                    voor de
+                                    werkgevers en werknemers omdat het de administratieve last aanzienlijk verminderde.
+                                    Door
+                                    deze functie toe te voegen, hebben we de waarde van de applicatie aanzienlijk
+                                    vergroot.
+                                </p>
+                                <p>Kortom, het werken aan de Selux applicatie was een geweldige kans om mijn
+                                    vaardigheden op
+                                    het gebied van web ontwikkeling te verbeteren en nieuwe uitdagingen aan te gaan. Het
+                                    was
+                                    uitdagend, maar tegelijkertijd zeer bevredigend om nieuwe functies en oplossingen te
+                                    ontwikkelen voor de applicatie. Ik ben blij dat ik de kans heb gekregen om aan zo'n
+                                    project te werken en kijk uit naar meer uitdagingen in de toekomst.</p>
 
                             </div>
 
-                            <br>
-                        </div>
-                    </div>
-                    <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">FOTO'S</span></h5>
+                            <div id="reflectie" class="w3-container menu">
 
-                    <div class="w3-container my-container" style="margin-top: 3vh;">
-                        <div style="width: 90%; margin: auto;">
+                                <p>Dit project was een heel leuke uitdaging omdat ik redelijk weinig ervaring had met
+                                    NodeJs en
+                                    had hiermee ook de kans om hierin te werken.</p>
+                                <p>Voor het Angular deel was het ook heel interessant om mijn frontend skills te
+                                    verbeteren. Na
+                                    elk afronding van een feature geeft dit ook een voldoening en motiveert dit jou om
+                                    er iets
+                                    leuk van te maken.</p>
+                                <p>Doorheen het project ben ik uiteraard veel problemen tegengekomen en heb geprobeerd
+                                    om van
+                                    elk probleem mijn les uit te trekken.</p>
+                                <p>Een probleem dat we tegenkwamen was bijvoorbeeld het sequentieel invullen van
+                                    formulieren bij
+                                    het aanmaken/bewerken van projecten. We hebben een oplossing gevonden door de
+                                    gebruiker de
+                                    mogelijkheid te geven om naar de volgende pagina te gaan, maar de velden op te slaan
+                                    en
+                                    later in te vullen. Dus de waardes werden gecasht in plaats van dat het meegegeven
+                                    werd naar
+                                    de volgende formulier.</p>
+                                <p>Voor het backend deel heb ik mij in het begin ook extra moeten inzetten omdat ik hier
+                                    redelijk weinig in gewerkt had. Al bij al verliep deze proces wel heel goed. Ik heb
+                                    reverse-engineering kunnen doen om de bestaande code te bestuderen en dus de
+                                    algemene
+                                    werking van de backend te begrijpen en hierna mijn eigen implementaties te kunnen
+                                    inbrengen.
+                                </p>
+                                <p>Deze project heeft mij ook veel geholpen met mijn studies. Ik heb door mijn ervaring
+                                    die ik
+                                    hiermee heb opgedaan al de nodige kennis voor 2 van mijn vakken. Namelijk Web expert
+                                    (NodeJs) en Fullstack Java (Angular deel). Uiteraard heb ik nog veel bijgeleerd bij
+                                    deze
+                                    vakken maar deze ervaring heeft mij hiervoor goed ondersteund.</p>
+                                <p>Uiteindelijk verliep dit project zeer goed en was heel tevreden met de resultaten die
+                                    geboekt
+                                    waren. Ik heb zowel mijn front-end skills als backend skills kunnen verbeteren. Voor
+                                    mijn
+                                    studies heb ik dit ook zeker meegenomen.</p>
+                                <p>Mijn uiteindelijke doel is als fullstack developer te kunnen werken en dit project
+                                    was
+                                    hierdoor een heel goede start.</p>
+                                <p>De reden waarom ik deze opdracht geselecteerd heb om te bespreken is omdat deze
+                                    opdracht mij
+                                    een heel goed inzicht heeft gegeven op het fullstack gebeurtenis. Ik heb veel
+                                    bijgeleerd in
+                                    deze periode en had een heel leuk ervaring.</p>
 
-                            <!-- First Photo Grid-->
-                            <div class="w3-row-padding">
-                                <div class="w3-half w3-container w3-margin-bottom">
-                                    <img src="groupfoto2.jpg" alt="mean" style="width:100%;" class="w3-hover-opacity">
-                                    <div class="w3-container w3-white">
-                                        <p><b>Groepsfoto tijdens hackathon</b></p>
-                                    </div>
-                                </div>
-                                <div class="w3-half w3-container w3-margin-bottom">
-                                    <img src="groupfoto.jpg" alt="mean" style="width:100%" class="w3-hover-opacity">
-                                    <div class="w3-container w3-white">
-                                        <p><b>Groepsfoto op het einde</b></p>
-                                    </div>
-                                </div>
                             </div>
-                            <!-- First Photo Grid-->
-                            <div class="w3-row-padding">
-                                <div class=" w3-container w3-margin-bottom">
-                                    <img src="cural1.PNG" alt="mean" style="width:100%;" class="w3-hover-opacity">
-                                    <div class="w3-container w3-white">
-                                        <p><b>Cural UI</b></p>
-                                    </div>
-                                </div>
-                                <div class=" w3-container w3-margin-bottom">
-                                    <img src="cural2.PNG" alt="mean" style="width:100%" class="w3-hover-opacity">
-                                    <div class="w3-container w3-white">
-                                        <p><b>Cural UI</b></p>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
-
-                        <div class="w3-container my-container">
-
+                        <div style="border-top: 1px solid gray; width: 85%; margin: auto; margin-top: 4rem;">
 
                         </div>
                     </div>
-                </div>
-
-                <div class="w3-row" style="margin: 1rem; display: flex; flex-direction: row;">
-                    <div class="w3-col m12">
-                        <a href="activity1.html" class="w3-button w3-padding-large w3-white w3-border"><b>
-                                << Vorige activiteit</b></a>
-                    </div>
-                    <div class="w3-col m12">
-                        <a href="activity3.html"
-                            class="w3-button w3-right w3-padding-large w3-white w3-border"><b>Volgende
-                                activiteit >> </b></a>
-                    </div>
-                </div>
-
-                <div style="margin: auto; display: flex; justify-content: center;">
-                    <p>2/3</p>
                 </div>
             </div>
 
+            <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">FOTO'S</span></h5>
+
+            <div class="w3-container my-container">
+                <div style="width: 90%; margin: auto;">
+
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding">
+                        <div class="w3-half w3-container w3-margin-bottom">
+                            <img src="selux/projectlist.PNG" alt="mean" style="width:100%;" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Tabel met filter functies voor admins</b></p>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-container w3-margin-bottom">
+                            <img src="selux/selux-ionic-formulierPNG.PNG" alt="mean" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Ionic registratie formulier</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-half w3-container w3-margin-bottom">
+                            <img src="selux/selux-fotos.PNG" alt="mean" style="width:100%;" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>Foto's en popups</b></p>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-container w3-margin-bottom">
+                            <img src="selux/nodejs.PNG" alt="mean" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>NodeJs code voor updaten van een project</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-half w3-container w3-margin-bottom">
+                            <img src="selux/dwa-rwa.PNG" alt="mean" style="width:100%;" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <p><b>DWA & RWA projecten aanmaken/bewerken</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 3rem; margin-right: 3rem;">
+            <div class="w3-row" style="margin: 1rem; display: flex; flex-direction: row;">
+                <div class="w3-col m12">
+                    <a href="activity1.html" class="w3-button w3-padding-large w3-white w3-border"><b>
+                            << Vorige activiteit</b></a>
+                </div>
+                <div class="w3-col m12">
+                    <a href="activity3.html"
+                        class="w3-button w3-right w3-padding-large w3-white w3-border"><b>Volgende
+                            activiteit >> </b></a>
+                </div>
+            </div>
+
+            <div style="margin: auto; display: flex; justify-content: center;">
+                <p>2/3</p>
+            </div>
         </div>
 
+        </div>
+
+        </br>
+       
+
+    </div>
+
+    </div>
 
 
-        <script>
-            // Script to open and close sidebar
-            function w3_open() {
-                var sidebar = document.getElementById("mySidebar");
-                sidebar.classList.remove("closed");
-                sidebar.style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
-            }
 
-            function w3_close() {
-                var sidebar = document.getElementById("mySidebar");
-                sidebar.classList.add("closed");
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            var sidebar = document.getElementById("mySidebar");
+            sidebar.classList.remove("closed");
+            sidebar.style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
+        function w3_close() {
+            var sidebar = document.getElementById("mySidebar");
+            sidebar.classList.add("closed");
+
+            setTimeout(function () {
+                sidebar.style.display = "none";
+            }, 500);
+            document.getElementById("myOverlay").style.display = "none";
+
+        }
+
+
+        function myAccFunc() {
+            var div = document.getElementById("demoAcc");
+            if (div.classList.contains("closed")) {
+                div.classList.remove("closed");
+                div.classList.add("opened");
+                div.style.height = "auto";
+
+            } else {
+                div.classList.remove("opened");
+                div.classList.add("closed");
                 setTimeout(function () {
-                    sidebar.style.display = "none";
+                    div.style.height = "0px";
                 }, 500);
-                document.getElementById("myOverlay").style.display = "none";
 
             }
+        }
 
-            function myAccFunc() {
-                var div = document.getElementById("demoAcc");
-                if (div.classList.contains("closed")) {
-                    div.classList.remove("closed");
-                    div.classList.add("opened");
-                    div.style.height = "auto";
-
-                } else {
-                    div.classList.remove("opened");
-                    div.classList.add("closed");
-                    setTimeout(function () {
-                        div.style.height = "0px";
-                    }, 500);
-
-                }
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-        </script>
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
 </body>
 
 </html>
@@ -270,13 +379,13 @@
         z-index: 3
     }
 
+
     .my-container {
         margin: auto;
         max-width: 90vw;
-        padding: 4em; 
+        padding: 5em;
         padding-top: 2em;
     }
-
 
     @media screen and (max-width: 1000px) {
         .my-content {
