@@ -61,16 +61,16 @@
 
                 <div class="w3-container my-container">
                     <div class="w3-card-4 w3-margin w3-white">
-                        <img src="mean.png" alt="Nature" style="width:100%; height: 100%;">
+                        <img src="hack4health.png" alt="Nature" style="width:100%; height: 100%;">
                         <div class="w3-container">
-                            <h3><b>Selux riolerings applicatie</b></h3>
+                            <h3><b>Hack4Health</b></h3>
                             <h5>MEAN-stack <span class="w3-opacity"></h5>
                         </div>
                         <div style="border-bottom: 1px solid gray; margin: auto; width: 85%;">
 
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" style="padding: 5em; padding-top: 2em;">
                             <p>Een kennis van mij zocht iemand die mee kon helpen met het verder bouwen van een
                                 rioleringsapplicatie
                                 (Selux) die gebouwd is met de MEAN-stack (MongoDb, Express, Angular, NodeJs). Omdat ik
@@ -158,87 +158,105 @@
 
                             </div>
 
-                            <div class="w3-row"
-                                style="margin: 1rem; display: flex; flex-direction: row; margin-top: 4rem;">
-                                <div class="w3-col m12">
-                                    <a href="activity1.html" class="w3-button w3-padding-large w3-white w3-border"><b>
-                                            << Vorige activiteit</b></a>
+                            <br>
+                        </div>
+                    </div>
+                    <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">FOTO'S</span></h5>
+
+                    <div class="w3-container my-container" style="margin-top: 3vh;">
+                        <div style="width: 90%; margin: auto;">
+
+                            <!-- First Photo Grid-->
+                            <div class="w3-row-padding">
+                                <div class="w3-half w3-container w3-margin-bottom">
+                                    <img src="groupfoto2.jpg" alt="mean" style="width:100%;" class="w3-hover-opacity">
+                                    <div class="w3-container w3-white">
+                                        <p><b>Groepsfoto tijdens hackathon</b></p>
+                                    </div>
                                 </div>
-                                <div class="w3-col m12">
-                                    <a href="activity3.html"
-                                        class="w3-button w3-right w3-padding-large w3-white w3-border"><b>Volgende
-                                            activiteit >> </b></a>
+                                <div class="w3-half w3-container w3-margin-bottom">
+                                    <img src="groupfoto.jpg" alt="mean" style="width:100%" class="w3-hover-opacity">
+                                    <div class="w3-container w3-white">
+                                        <p><b>Groepsfoto op het einde</b></p>
+                                    </div>
                                 </div>
+                                
                             </div>
-                            <div style="margin: auto; display: flex; justify-content: center;">
-                                <p>2/3</p>
-                            </div>
+                        </div>
+
+                        <div class="w3-container my-container">
+
+
                         </div>
                     </div>
                 </div>
 
-                <div class="w3-content my-content">
-
-
+                </br>
+                </br>
+                </br>
+                <div class="w3-row" style="margin: 1rem; display: flex; flex-direction: row; margin-top: 4rem;">
+                    <div class="w3-col m12">
+                        <a href="activity1.html" class="w3-button w3-padding-large w3-white w3-border"><b>
+                                << Vorige activiteit</b></a>
+                    </div>
+                    <div class="w3-col m12">
+                        <a href="activity3.html"
+                            class="w3-button w3-right w3-padding-large w3-white w3-border"><b>Volgende
+                                activiteit >> </b></a>
+                    </div>
                 </div>
 
-                <div class="w3-content my-content">
-
-
+                <div style="margin: auto; display: flex; justify-content: center;">
+                    <p>2/3</p>
                 </div>
+                </br>
+                </br>
+                </br>
+                </br>
+
             </div>
+
         </div>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-    </div>
-
-    </div>
 
 
 
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            var sidebar = document.getElementById("mySidebar");
-            sidebar.classList.remove("closed");
-            sidebar.style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                var sidebar = document.getElementById("mySidebar");
+                sidebar.classList.remove("closed");
+                sidebar.style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
 
-        function w3_close() {
-            var sidebar = document.getElementById("mySidebar");
-            sidebar.classList.add("closed");
+            function w3_close() {
+                var sidebar = document.getElementById("mySidebar");
+                sidebar.classList.add("closed");
 
-            setTimeout(function () {
-                sidebar.style.display = "none";
-            }, 500);
-            document.getElementById("myOverlay").style.display = "none";
-
-        }
-
-        function myAccFunc() {
-            var div = document.getElementById("demoAcc");
-            if (div.classList.contains("closed")) {
-                div.classList.remove("closed");
-                div.classList.add("opened");
-                div.style.height = "auto";
-
-            } else {
-                div.classList.remove("opened");
-                div.classList.add("closed");
                 setTimeout(function () {
-                    div.style.height = "0px";
+                    sidebar.style.display = "none";
                 }, 500);
+                document.getElementById("myOverlay").style.display = "none";
 
             }
-        }
-    </script>
+
+            function myAccFunc() {
+                var div = document.getElementById("demoAcc");
+                if (div.classList.contains("closed")) {
+                    div.classList.remove("closed");
+                    div.classList.add("opened");
+                    div.style.height = "auto";
+
+                } else {
+                    div.classList.remove("opened");
+                    div.classList.add("closed");
+                    setTimeout(function () {
+                        div.style.height = "0px";
+                    }, 500);
+
+                }
+            }
+        </script>
 </body>
 
 </html>

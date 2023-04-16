@@ -57,7 +57,7 @@
     <!-- Sidebar/menu------------------------------------------ -->
 
     <div class="w3-content my-content">
-        <div style="width: 75vw; margin: auto;">
+        <div class="content-container" >
 
             <div style="width: 90%; margin: auto;">
                 <div class="w3-container my-container">
@@ -73,7 +73,7 @@
                     </header>
 
                     <!-- First Photo Grid-->
-                    <div class="w3-row-padding">
+                    <div class="w3-row-padding timeline-container">
 
 
                         <div class="timeline">
@@ -302,6 +302,9 @@
         margin: 0 auto;
     }
 
+    .timeline-container{
+        margin-left: -5vw;
+    }
     /* The actual timeline (the vertical ruler) */
     .timeline::after {
         content: '';
@@ -319,6 +322,11 @@
         width: 120%;
         background-color: inherit;
 
+    }
+
+    .content-container{
+        width: 75vw;
+        margin: auto;
     }
 
     /* The circles on the timeline */
@@ -371,6 +379,7 @@
         background-color: white;
         position: relative;
         border-radius: 6px;
+        width: 85%;
     }
 
     #mySidebar {
@@ -445,6 +454,14 @@
 
         .my-container {
             max-width: 100vw;
+        }
+        
+    .content-container{
+        width: 92vw;
+        margin: auto;
+    }
+        .content{
+            width: 100%;
         }
     }
 </style>
