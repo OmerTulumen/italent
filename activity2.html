@@ -55,7 +55,7 @@
 
     <!-- Sidebar/menu------------------------------------------ -->
     <div class="w3-content my-content">
-        <div style="width: 75vw; margin: auto;">
+        <div class="some-container">
 
             <div style="width: 90%; margin: auto;">
                 <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">ACTIVITEIT VERSLAG</span></h5>
@@ -72,17 +72,19 @@
 
                         </div>
 
-                        <div class="w3-container" style="padding: 5em; padding-top: 2em;">
+                        <div class="w3-container my-container">
 
                             <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin: 1rem; ">
-                                <div class="w3-row w3-center w3-card w3-padding" style="width: 45%; margin: 1em;">
+                                <div class="w3-row w3-center w3-card w3-padding menu-container">
                                     <a onclick="openMenu(event, 'verslag');" id="myLink" style="cursor: pointer;">
                                         <div class="tablink" style="text-decoration: none;"><b>Verslag</b></div>
                                     </a>
                                 </div>
-                                <div class="w3-row w3-center w3-card w3-padding"  style="width: 45%; margin: 1em;">
-                                    <a  onclick="openMenu(event, 'reflectie');">
-                                        <div class="tablink" style="text-decoration: none; cursor: pointer" ><b>Reflectie</b></div>
+                                <div class="w3-row w3-center w3-card w3-padding menu-container" >
+                                    <a onclick="openMenu(event, 'reflectie');">
+                                        <div class="tablink" style="text-decoration: none; cursor: pointer">
+                                            <b>Reflectie</b>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -379,13 +381,24 @@
         z-index: 3
     }
 
-
     .my-container {
         margin: auto;
         max-width: 90vw;
-        padding: 5em;
+        padding: 4em;
         padding-top: 2em;
     }
+
+    .some-container {
+        width: 75vw;
+        margin: auto"
+
+    }
+
+    .menu-container{
+      width: 45%; 
+      margin: 1em;
+    }
+
 
     @media screen and (max-width: 1000px) {
         .my-content {
@@ -400,5 +413,14 @@
             max-width: 90vw;
             padding: 1em;
         }
+
+        .some-container {
+            width: 100vw;
+        }
+
+        .menu-container{
+      width: 35%; 
+      margin: 1em;
+    }
     }
 </style>
